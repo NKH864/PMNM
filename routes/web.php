@@ -63,7 +63,7 @@ Route::prefix('product')->group(function () {
 });
 
 
-route::get('/sinhvien/{name?}/{mssv?}', function($name='Luong Xuan Hieu', $mssv='123456'){
+route::get('/sinhvien/{name?}/{mssv?}', function($name='Nguyen Khanh Hoi', $mssv='0035267'){
     return view('sinhvien.gioithieu', ['name' => $name], ['mssv' => $mssv]);
 });
 
